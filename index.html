@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Graph</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <input type="file" id="file-input" onclick="showDiv()"/>
+        <h3>Contents of the file:</h3>
+        <div class="hidden">
+            <p>Start Date</p>
+            <input type="date" id="startDate">
+            <p>End Date</p>
+            <input type="date" id="endDate">
+            <button id="dates-input">Get Coefficient</button>
+        </div>
+        <pre id="file-content"></pre>
+    </div>
+    <script src="fileReader.js"></script>
+</body>
+</html>
